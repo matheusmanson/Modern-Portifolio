@@ -383,11 +383,13 @@
 
     .itensmain {
       width: 100%;
+      padding: 0px;
       height: auto;
      }
 
+     
+
      #itensmain1 {
-      max-width: 500px;
       height: auto;
      }
 

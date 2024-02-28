@@ -85,7 +85,9 @@ header {
     
 }
 
-
+.text-box {
+   
+}
 
 
 
@@ -135,9 +137,7 @@ main {
 #containermain {
     display: flex;
     flex-direction: row;
-    height: 70vh
-    
-    
+    height: auto;
 }
 
 .itensmain {
