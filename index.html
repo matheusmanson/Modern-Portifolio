@@ -5,50 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern-Portifolio</title>
     <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="mediaquery/media-query.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
-    <article>
+    
         <header>
             <nav id="nav1">
+                
                 <div id="containerbusca">
-                    <div class="itensbusca"><a href="#"><strong>Home</strong></a></div>
-                    <div class="itensbusca"><a href="#"><strong>About</strong></a></div>
-                    <div class="itensbusca"><a href="#"><strong>Projects</strong></a></div>
-                    <div class="itensbusca"><a href="#"><strong>Articles</strong></a></div>
-        
-        
-        
+                    <a href="#" id="bhome" onclick="mostrarHome()">Inicio</a>
+                    <a href="#" id="babout" onclick="mostrarAbout()">Sobre</a>
+                    <a href="#" id="bprojects" onclick="mostrarProjects()">Projetos</a>
+                    <a href="#" id="bartigos" onclick="mostrarArticles()">Artigos</a>
                 </div>
+
                 <div>
-                    <div><a href="#">Logo</a></div>
+                    <!-- Menu Hambumger INICIO-->
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                      <div id="bar1" class="bar"></div>
+                      <div id="bar2" class="bar"></div>
+                      <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                      <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Blog</a></li>
+                      </ul>
+                    </nav> 
+                  </div>
+                  
+                  <div class="menu-bg" id="menu-bg"></div>
+                <!-- Menu Hambumger FIM! -->
                 </div>
-                <div id="containerbusca">
-                    <div class="itensbusca"><a href="#"><img src="imagens/x-37x37.png" alt=""></a></div>
-                    <div class="itensbusca"><a href="#"><img src="imagens/git-37x37.png" alt=""></a></div>
-                    <div class="itensbusca"><a href="#"><img src="imagens/pinterest-37x37.png" alt=""></a></div>
-                    <div class="itensbusca"><a href="#"><img src="imagens/face-37x37.png" alt=""></a></div>
-                    <div class="itensbusca"><a href="#"><img src="imagens/linkedin-37x37.png" alt=""></a></div>
-                    <div class="itensbusca"><a href="#"><img src="imagens/reddit-37x37.png" alt=""></a></div>
+                
+                   
+                <div class="logo">
+                    <div class="logo1"><a href="#"><img src="imagens/logo100x100.png" alt="" ></a></div>
+                </div>
+
+                <div id="containerbusca1">
+                    <div class="itensbusca2"><a href="#"><img src="imagens/x-37x37.png" alt=""></a></div>
+                    <div class="itensbusca2"><a href="#"><img src="imagens/git-37x37.png" alt=""></a></div>
+                    <div class="itensbusca2"><a href="#"><img src="imagens/pinterest-37x37.png" alt=""></a></div>
+                    <div class="itensbusca2"><a href="#"><img src="imagens/face-37x37.png" alt=""></a></div>
+                    <div class="itensbusca2"><a href="#"><img src="imagens/linkedin-37x37.png" alt=""></a></div>
+                    <div class="itensbusca2"><a href="#"><img src="imagens/reddit-37x37.png" alt=""></a></div>
                 </div>
             </nav>
         </header>
         <main>
             <div id="containermain">
-                <div class="itensmain"><img src="imagens/Original/inicio500x500.png" alt="" class="img1"></div>
-                <div class="itensmain1">
-                    <h1>Turning Vision into Reality With Code And Design.</h1>
-                    <h2>As a Skilled full-stack developer, I am decicade to turning ideas into innovative web application, Explore my latest projects and articles, showcasing my expertise in
-                        React.js and web development.
-                        <div id="containermain1">
-                            <div>RESUME</div>
-                            <div>CONTACT</div>
-                        </div>
+                <div class="itensmain"><img src="imagens/Original/inicio500x500.png" id="imgdono" alt="" class="img1"></div>
+                <div id="itensmain1">
+                    <div>
+                        <h1>Turning Vision into Reality With Code And Design.</h1>
+                    </div>
+                    <div class="textmain2">
+                        <h2>As a Skilled full-stack developer, I am decicade to turning ideas into innovative web application, Explore my latest projects and articles, showcasing my expertise in
+                            React.js and web development.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium error unde modi eius adipisci quam, ea velit similique minima. Ipsa ipsum vero debitis mollitia magnam minus accusantium, error laudantium quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit beatae corporis, minima exercitationem libero alias assumenda animi perferendis quaerat nam quod saepe error rerum ad illo et enim ex esse?
+                    </div>
+                        
+
         
-                    </h2>
+                </div>
+                <div id="aboutContent" style="display: none;">
+                    <!-- Conteúdo do Sobre aqui -->
+                    <h1>About Me</h1>
+                    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi optio facilis tempore ea velit voluptate aperiam tempora dolore molestias laudantium officiis quo eligendi cumque a, sapiente perspiciatis corrupti, consequuntur quam?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet molestias, dolorum vitae iure aliquid minus laboriosam aperiam omnis harum! Similique dolor eius eos ullam id nihil aspernatur magnam error vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati esse harum ut optio maiores unde, nemo reprehenderit quam soluta saepe praesentium facere, natus rem quas. Facilis debitis maxime atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae et minus delectus, modi hic, est repellat ullam sed illum itaque provident rem. Maxime ratione, eligendi perferendis deleniti suscipit consequatur perspiciatis.</h2>
+                </div>
+                <div id="projectsContent" style="display: none;">
+                    <!-- Conteúdo do Projeto aqui -->
+                    <h1>My Projects</h1>
+                    <p><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit nulla, tempore culpa doloribus autem facere accusamus modi mollitia error eligendi quis unde necessitatibus voluptatibus vitae perferendis, eum, corporis fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iste sapiente animi, aliquam eligendi fugiat ratione quibusdam corrupti ab delectus amet incidunt tempora maxime similique culpa nobis hic minus soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates nam laborum, nobis vel illo, ex itaque natus ut nisi quae. Neque voluptas inventore ratione facilis ipsam nostrum tempore quaerat? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tenetur dolor illo amet aliquid voluptatem nesciunt praesentium. Rem officiis saepe, hic quia aut minus id sit ipsa, illum dignissimos fugit.</h2></p>
+                </div>
+                <div id="articlesContent" style="display: none;">
+                    <!-- Conteúdo do Artigo aqui -->
+                    <h1>My Articles</h1>
+                    <p><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit nulla, tempore culpa doloribus autem facere accusamus modi mollitia error eligendi quis unde necessitatibus voluptatibus vitae perferendis, eum, corporis fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iste sapiente animi, aliquam eligendi fugiat ratione quibusdam corrupti ab delectus amet incidunt tempora maxime similique culpa nobis hic minus soluta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa, illum, repellendus iure quaerat doloremque, consectetur aperiam eveniet dignissimos consequuntur mollitia atque sequi ullam ex vero quas est blanditiis tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi delectus fugiat optio eum. Dolorum possimus ex exercitationem laudantium hic quisquam enim qui. Consectetur delectus laudantium sapiente assumenda totam dignissimos sunt!</h2></p>
                 </div>
             </div>
+            
+            <div class="text-box">
+                <div class="container-btn-1"><a href="#" class="btn-1 btn-white btn-animate">RESUME</a></div>
+                <div class="container-btn-2"><a href="#" class="btn-2 btn-white btn-animate">CONTACT</a></div>
+            </div>
+
         </main>
-    </article>
+    
 </body>
 </html>

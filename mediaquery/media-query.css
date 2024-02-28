@@ -1,0 +1,505 @@
+/* Estilos para telas pequenas (até 768px de largura) */
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-family: var(--font1);
+        font-size: 2.5em;
+    }
+
+    nav {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #nav1{
+      margin: 0px;
+      padding: 0px;
+      height: 55px;
+    }
+
+  
+    header {
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    #menu {
+      display: block;
+      
+     }
+  
+     #containerbusca {
+      display: none;
+     }
+     
+     #containermain {
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      text-align: center;
+      overflow-y:scroll;
+      height: 500px;
+     }
+
+     .scroll-hidden::-webkit-scrollbar {
+      display: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+.container-btn-1 {
+  display: block;
+}
+
+
+     .itensmain {
+      width: 270px;
+      padding: 0px;
+      margin-bottom: 5px;
+     }
+     #itensmain1 {
+      width: 290px;
+      height: 200px;
+     }
+     
+     h1 {
+       font-size: 1.5em;
+     }
+
+     h2 {
+        font-size: 0.8em;
+     }
+
+     /* RESOLVER PARA TELA MENOR */
+
+     /* BOTÃO ANIMADO*/
+     .text-box {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 95%;
+      height: 80px;
+      margin: auto;
+    
+
+}
+
+.container-btn-1 {
+    padding: 10px;
+    
+}
+
+.container-btn-2 {
+    padding: 10px;
+    
+}
+
+
+
+.btn-1:link,
+.btn-1:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: flex;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn-1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-1:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.btn-white {
+    background-color: #ffffff5b;
+    color: #777;
+}
+
+.btn-1::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #937EE0;
+}
+
+.btn-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+
+    .btn-2:link,
+.btn-2:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn-2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-2:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.btn-white {
+    background-color: #ffffff5b;
+    color: #777;
+}
+
+.btn-2::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #937EE0;
+}
+
+.btn-2:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  
+
+
+
+    
+     /* BOTÃO ANIMADO*/ 
+      
+     }
+     /* RESOLVER PARA TELA MENOR */
+     
+
+     body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff ;
+      box-shadow: none;
+      overflow-y:hidden
+
+    }
+
+    /* MENU HAMBUMGUER */
+    #menu {
+      z-index: 2;
+      
+    }
+    
+    #menu-bar {
+      width: 50px;
+      height: 35px;
+      margin: auto;
+      cursor: pointer;
+    }
+    
+    .bar {
+      height: 5px;
+      width: 60%;
+      background-color: #000000;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+    
+    #bar1 {
+      transform: translateY(-4px);
+    }
+    
+    #bar3 {
+      transform: translateY(4px);
+    }
+    
+    .nav {
+      transition: 0.3s ease;
+      display: none;
+    }
+    
+    .nav ul {
+      padding: 2 25px;
+    }
+    
+    .nav li {
+      list-style: none;
+      padding: 12px 0;
+    }
+    
+    .nav li a {
+      color: rgb(187, 12, 12);
+      font-size: 15px;
+      text-decoration: none;
+      margin: auto;
+    }
+    
+    .nav li a:hover {
+      font-weight: bold;
+    }
+    
+    .menu-bg, #menu {
+      top: 20;
+      left: 50;
+      position: absolute;
+      margin: 20px;
+
+    }
+
+    
+    
+    .menu-bg {
+      width: 2;
+      height: 0;
+      margin: 210px 20 50px 200px;
+      background-color: #3a3a3ac5;
+      transition: 0.3s unset;
+      
+    }
+    
+    .change {
+      display: block;
+    }
+    
+    .change .bar {
+      background-color: rgb(0, 0, 0);
+    }
+    
+    .change #bar1 {
+      transform: translateY(4px) rotateZ(-45deg);
+    }
+    
+    .change #bar2 {
+      opacity: 0;
+    }
+    
+    .change #bar3 {
+      transform: translateY(-6px) rotateZ(45deg);
+    }
+    
+    .change-bg {
+      width: 200px;
+      height: 100vh;
+      transform: translate(-45px,-20%);
+    }
+  
+  
+  
+  
+    .logo1, .itensbusca2{
+      display: none;
+    }
+    
+     
+
+
+
+}
+
+/* Estilos para telas médias (de 769px a 1024px de largura) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    h1 {
+        font-family: var(--font1);
+        font-size: 2.5em;
+    }
+
+    .itensmain {
+      width: 500px;
+      height: auto;
+     }
+
+     #itensmain1 {
+      max-width: 500px;
+      height: auto;
+     }
+
+   #menu {
+    display: block;
+    
+   }
+
+   #containerbusca {
+    display: none;
+   }
+
+
+   body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f00707 ;
+  }
+  /* MENU HAMBUMGUER */
+  #menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 54px;
+    height: 35px;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 1 25px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    margin: auto;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 92px;
+    left: 1;
+    position: absolute;
+    margin: 50px;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 100px 20 50px 100px;
+    background: radial-gradient(circle, #DC052D, #DC052D);
+    border-radius: 35px 35px 35px 35px;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 250px;
+    height: 460px;
+    transform: translate(-100px,-20%);
+  }
+
+
+
+
+  .logo1, .itensbusca2{
+    display: none;
+  }
+
+  /* MENU HAMBUMGUER */
+
+ 
+
+
+   
+}
