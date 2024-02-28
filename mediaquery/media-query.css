@@ -41,6 +41,10 @@
       height: 500px;
      }
 
+     .textmain2 {
+      height: 100px;
+     }
+
      .scroll-hidden::-webkit-scrollbar {
       display: none;
   }
@@ -79,7 +83,7 @@
       display: flex;
       justify-content: center;
       position: absolute;
-      width: 95%;
+      width: 270px;
       height: 80px;
       margin: auto;
     
@@ -87,11 +91,13 @@
 }
 
 .container-btn-1 {
+    width: 100px;
     padding: 10px;
     
 }
 
 .container-btn-2 {
+    width: 200px;
     padding: 10px;
     
 }
